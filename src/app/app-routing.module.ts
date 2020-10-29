@@ -1,8 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+import {GetemployeeComponent} from './employee/getemployee/getemployee.component';
 
-const routes: Routes = [];
+
+let routes: Routes;
+routes = [
+  {
+    path: '',
+    component: GetemployeeComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
