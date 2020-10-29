@@ -1,0 +1,23 @@
+<div class="container text-danger">
+    <div class="card">
+        <div class="card-header">
+            Employee Table
+        </div>
+        <div class="card-body">
+            <table class="table table-striped table-responsive">
+                <thead>
+                <th>Name</th>
+                <th>Phone number</th>
+                <th>Address</th>
+                </thead>
+                <tbody>
+                <tr *ngFor="let obj of dataArray">
+                    <td>{{obj.name}}</td>
+                    <td>{{obj.phone}}</td>
+                    <td>{{obj.address }}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
